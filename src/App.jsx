@@ -3,13 +3,13 @@ import './App.css'
 
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import Cow from '../public/Cow'
+import Cow from './Cow'
 
 function App() {
   const [showCow, setShowCow] = useState(false)
   
   const handlePlayClick = () => {
-    const audio = new Audio('./public/hq_cow_music.mp3')
+    const audio = new Audio('./hq_cow_music.mp3')
     audio.play()
     audio.loop = true
     audio.volume = 0.5
